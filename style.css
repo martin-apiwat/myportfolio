@@ -68,9 +68,9 @@ button:hover {
 .work-subtitle {
   /* border: 1px solid yellow; */
   font-family: "Roboto", sans-serif;
-  display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 .chips-line {
   /* border: 1px solid blue; */
