@@ -3,27 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 .navbar {
   border-bottom: 1px solid black;
-  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
   /* position: fixed 100%; */
+  padding: 10px 5px;
+}
+.initialer {
   padding-left: 10px;
-  padding-right: 10px;
 }
 .SoMe {
   /* border: 1px solid black; */
   display: flex;
   gap: 4px;
+  padding-right: 10px;
 }
 
 .about-me {
   /*  border: 1px solid black; */
   display: flex;
   align-items: center;
-  /* margin-top: 40px; */
+  justify-content: center;
   padding: 20px;
   height: 85vh;
 }
@@ -32,7 +37,6 @@
 }
 .about-text-button {
   /* border: 1px solid red; */
-  font-family: "Roboto", sans-serif;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -56,10 +60,13 @@ button {
 button:hover {
   border-radius: 10px;
 }
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
 .work-title {
   /* border: 1px solid green; */
-  font-family: "Roboto", sans-serif;
-  /* margin-top: 100px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +74,6 @@ button:hover {
 }
 .work-subtitle {
   /* border: 1px solid yellow; */
-  font-family: "Roboto", sans-serif;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
