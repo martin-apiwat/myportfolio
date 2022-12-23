@@ -50,7 +50,7 @@ body {
 .about-text-button p {
   padding-bottom: 10px;
 }
-button {
+.about-text-button button {
   border: 1px solid black;
   background-color: white;
   border-radius: 6px;
@@ -84,67 +84,108 @@ button:hover {
   justify-content: center;
   gap: 10px;
 }
-#react {
-  border: 1px solid #61dbfb;
-  border-radius: 10px;
+.chip {
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4px 15px;
+}
+#react {
+  border: 1px solid #61dbfb;
 }
 #firebase {
   border: 1px solid #f5820d;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
 }
 #npm {
   border: 1px solid #cc3534;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
 }
 #mongo-db {
   border: 1px solid #3fa037;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
 }
 #javascript {
   border: 1px solid #f0db4f;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
 }
 #typescript {
   border: 1px solid #007acc;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
 }
 #html {
   border: 1px solid #e34c26;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
 }
 #css {
   border: 1px solid #2965f1;
+}
+.project-container {
+  padding: 0px 20px;
+}
+.project {
+  margin: 40px auto;
+  max-width: 1024px;
+  height: 450px;
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.img-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 150ms;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project img:hover {
+}
+.img-overlay {
+  position: absolute;
+  inset: 0;
+  background: #26262699;
+}
+.project-text-container {
+  position: absolute;
+  inset: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+}
+.project-text-title,
+.project-text-subtitle {
+  font-family: "Piazzolla", serif;
+}
+.project-text-title {
+  font-size: 36px;
+  line-height: 40px;
+  color: rgb(224, 242, 254);
+  font-weight: 900;
+}
+.project-text-subtitle {
+  color: rgb(240, 249, 255);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.project-text-container button {
+  border: 1px solid black;
+  border-radius: 6px;
+  transition: 150ms;
+  width: 128px;
+  padding: 8px 0px;
+  background: black;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+.project-text-container button:hover {
+  border-radius: 12px;
+}
+footer {
+  padding: 30px;
+  background: rgb(229, 231, 235);
+}
+.footer-license {
+  text-align: center;
+  color: rgb(75, 85, 99);
 }
